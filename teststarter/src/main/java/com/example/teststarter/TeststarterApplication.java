@@ -20,7 +20,7 @@ public class TeststarterApplication {
 	@Autowired
 	private AuthorServer authorServer;
 
-	@RequestMapping("/123")
+	@RequestMapping("/author")
 	String home() {
 		return "发布者："+ authorServer.getAuthor();
 	}
